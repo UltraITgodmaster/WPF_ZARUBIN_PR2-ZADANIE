@@ -1,0 +1,45 @@
+﻿<Window x:Class="WPF_ZARUBIN_PR2_ZADANIE.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_ZARUBIN_PR2_ZADANIE"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <Grid Margin="-55,-25,2,-207">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF6600AC" Offset="0.667"/>
+                    <GradientStop Color="#FFF70000"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="63*"/>
+                <RowDefinition Height="166*"/>
+                <RowDefinition Height="34*"/>
+                <RowDefinition Height="389*"/>
+            </Grid.RowDefinitions>
+            <ComboBox SelectedIndex="1" Margin="54,3,647,124"  FontFamily="Arial" FontWeight="Bold" FontSize="14" Grid.Row="1">
+                <ComboBoxItem Content="Тёмно-Тёмно серый" />
+                <ComboBoxItem Content="Чёрный" />
+                <ComboBoxItem Content="Black" />
+                <ComboBoxItem Content="#FF000000" />
+            </ComboBox>
+            <GroupBox Header="Настроить кисть" HorizontalAlignment="Left" Height="111" VerticalAlignment="Top" Width="764" FontSize="18" Margin="34,1,0,0" Grid.RowSpan="2">
+                <Label Content="Выбрать цвет&#x9;&#x9;Настроить размер" x:Name="lab1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16" Width="688" RenderTransformOrigin="0.469,4.516" FontFamily="Swis721 LtEx BT" Background="White"/>
+
+            </GroupBox>
+            <Slider Height="25" Width="100" Minimum="1" Maximum="100" Value="10" Margin="240,9,505,132" Grid.Row="1" ValueChanged="Slider_ValueChanged" />
+            <InkCanvas Name="Com1" Margin="160,75,10,171" Grid.RowSpan="3" Background="White" Grid.Row="1">
+                <InkCanvas.DefaultDrawingAttributes>
+                    <DrawingAttributes/>
+                </InkCanvas.DefaultDrawingAttributes>
+            </InkCanvas>
+
+
+
+        </Grid>
+
+    </Grid>
+</Window>
