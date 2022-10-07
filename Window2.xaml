@@ -31,7 +31,7 @@
 
             </GroupBox>
             <Slider Height="25" Width="100" Minimum="1" Maximum="100" Value="10" Margin="240,9,505,132" Grid.Row="1" ValueChanged="Slider_ValueChanged" />
-            <InkCanvas Name="Com1" Margin="160,75,10,171" Grid.RowSpan="3" Background="White" Grid.Row="1">
+            <InkCanvas Name="Com1" Margin="16,75,10,171" Grid.RowSpan="3" Background="White" Grid.Row="1">
                 <InkCanvas.DefaultDrawingAttributes>
                     <DrawingAttributes/>
                 </InkCanvas.DefaultDrawingAttributes>

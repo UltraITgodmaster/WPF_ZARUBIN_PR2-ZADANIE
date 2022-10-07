@@ -7,19 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Menu Background="#FF737AFF" BorderBrush="Navy" BorderThickness="1">
+        <Menu Background="White" BorderBrush="Navy" BorderThickness="1">
             <MenuItem Header="Меню" Click="MenuItem_Click_3">
-                <MenuItem Header="Не менять цвет"/>
-                <MenuItem Header="Изменить цвет" Click="MenuItem_Click_1"/>
+                <MenuItem Header="Не менять цвет" ToolTip="Не менять цвет"/> 
+                <MenuItem x:Name="sad" Header="Изменить цвет" Click="MenuItem_Click_1" ToolTip="Изменить цвет окна"/>
                 <Separator/>
-                <MenuItem Header="Закрыть" Click="MenuItem_Click_2"/>
+                <MenuItem Header="Закрыть" Click="MenuItem_Click_2" ToolTip="Закрыть приложение"/> 
                 <Separator/>
-                <MenuItem Header="О разработчике" Click="MenuItem_Click" />
-
+                <MenuItem Header="О разработчике" Click="MenuItem_Click" ToolTip="Узнать информацию о разработчике" />
+                
             </MenuItem>
            
         </Menu>
-        <Button Content="Перейти к заданию 2" HorizontalAlignment="Left" Margin="237,105,0,0" VerticalAlignment="Top" Width="154" Height="41" Click="Button_Click"/>
+        <Button Content="Перейти к заданию 2" HorizontalAlignment="Left" Margin="85,76,0,0" VerticalAlignment="Top" Width="154" Height="41" Click="Button_Click"/>
 
     </Grid>
 </Window>

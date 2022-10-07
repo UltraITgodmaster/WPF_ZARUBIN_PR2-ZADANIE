@@ -29,11 +29,12 @@ namespace WPF_ZARUBIN_PR2_ZADANIE
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Зарубин 402 группа и т.д.");
+
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            Background = Brushes.Red;
         }
         
         
@@ -54,5 +55,7 @@ namespace WPF_ZARUBIN_PR2_ZADANIE
         {
 
         }
+
+        
     }
 }
